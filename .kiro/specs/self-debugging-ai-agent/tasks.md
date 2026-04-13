@@ -103,8 +103,8 @@ Build a CLI-driven autonomous self-debugging code agent in Python. The implement
     - Test that output with N tests, P passes, F failures produces correct TestResult fields
     - **Validates: Requirements 5.2, 5.3, 5.4**
 
-- [ ] 7. Implement memory store
-  - [ ] 7.1 Implement memory store in `memory/store.py`
+- [x] 7. Implement memory store
+  - [x] 7.1 Implement memory store in `memory/store.py`
     - Create `MemoryStore` class with `store(record)`, `retrieve_similar(error_signature, top_k)`, `_load()`, `_save()` methods
     - Persist records to JSON file on disk
     - Create empty JSON file if it does not exist on startup
