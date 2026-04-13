@@ -57,8 +57,8 @@ Build a CLI-driven autonomous self-debugging code agent in Python. The implement
     - Test that strings without markdown code fences produce a descriptive parse error
     - **Validates: Requirements 14.4**
 
-- [ ] 3. Implement sandbox execution backends
-  - [ ] 3.1 Implement sandbox executor in `sandbox/executor.py`
+- [x] 3. Implement sandbox execution backends
+  - [x] 3.1 Implement sandbox executor in `sandbox/executor.py`
     - Define `SandboxExecutor` protocol with `execute(code, timeout)` method
     - Implement `SubprocessSandbox` using `subprocess.run()` with restricted permissions
     - Implement `DockerSandbox` using `docker` Python SDK
@@ -70,8 +70,8 @@ Build a CLI-driven autonomous self-debugging code agent in Python. The implement
     - Test that code producing stdout/stderr/exceptions returns correct ExecutionResult fields and exit codes
     - **Validates: Requirements 4.2, 4.3**
 
-- [ ] 4. Implement patch generator
-  - [ ] 4.1 Implement patch generator in `sandbox/patcher.py`
+- [x] 4. Implement patch generator
+  - [x] 4.1 Implement patch generator in `sandbox/patcher.py`
     - Create `PatchGenerator` class with `apply_patch(original_code, unified_diff)` and `generate_diff(original, modified)` methods
     - Use `difflib` for generating unified diffs
     - Return `PatchResult` with `success=False` and descriptive error for failed patches
@@ -88,11 +88,11 @@ Build a CLI-driven autonomous self-debugging code agent in Python. The implement
     - Test that applying a mismatched diff returns PatchResult with `success=False` and non-empty `error_message`
     - **Validates: Requirements 7.3**
 
-- [ ] 5. Checkpoint - Ensure all tests pass
+- [x] 5. Checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. Implement test runner
-  - [ ] 6.1 Implement test runner in `tests/runner.py`
+- [x] 6. Implement test runner
+  - [x] 6.1 Implement test runner in `tests/runner.py`
     - Create `TestRunner` class that combines code + tests into a single script
     - Execute combined script in sandbox and parse output into `TestResult`
     - Parse pass/fail counts, failure details, and overall status
