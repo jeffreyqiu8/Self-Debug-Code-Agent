@@ -121,23 +121,23 @@ Build a CLI-driven autonomous self-debugging code agent in Python. The implement
     - Test that retrieval returns only records whose `error_signature` contains the query substring
     - **Validates: Requirements 11.2**
 
-- [ ] 8. Implement code generator and debugger agents
-  - [ ] 8.1 Implement code generator agent in `agents/code_generator.py`
+- [x] 8. Implement code generator and debugger agents
+  - [x] 8.1 Implement code generator agent in `agents/code_generator.py`
     - Create `CodeGeneratorAgent` class with `generate_code(task_description)` and `generate_tests(task_description, code)` methods
     - Use `LLMClient` for API calls and `response_parser` for extracting code
     - Return `GenerationResult` with code string and metadata
     - Generate minimum 3 test cases covering normal, edge, and error scenarios when auto-generating tests
     - _Requirements: 2.1, 2.2, 2.4, 3.1, 3.2, 3.3_
 
-  - [ ] 8.2 Implement debugger agent in `agents/debugger.py`
+  - [x] 8.2 Implement debugger agent in `agents/debugger.py`
     - Create `DebuggerAgent` class with `diagnose(code, error_logs, test_results, past_fixes)` method
     - Send failure context to LLM and extract root cause + unified diff patch
     - Return `DiagnosisResult` with root cause, patch data, and raw response
     - Produce line-level patch instructions, not full rewrites
     - _Requirements: 6.1, 6.2, 6.3, 6.4_
 
-- [ ] 9. Implement orchestrator loop
-  - [ ] 9.1 Implement orchestrator in `orchestrator.py`
+- [x] 9. Implement orchestrator loop
+  - [x] 9.1 Implement orchestrator in `orchestrator.py`
     - Create `Orchestrator` class with `run(task_input)` and `_execute_iteration(code, tests, iteration)` methods
     - Implement generate → execute → test → diagnose → patch loop
     - Stop on success (all tests pass) or when max_iterations reached
