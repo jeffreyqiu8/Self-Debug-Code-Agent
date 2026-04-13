@@ -153,18 +153,18 @@ Build a CLI-driven autonomous self-debugging code agent in Python. The implement
     - Use mock sandbox/agents to control test outcomes per iteration
     - **Validates: Requirements 8.1, 8.2, 8.3, 8.5**
 
-- [ ] 10. Checkpoint - Ensure all tests pass
+- [x] 10. Checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 11. Implement CLI entry point and demo tasks
-  - [ ] 11.1 Implement CLI entry point in `main.py`
+- [x] 11. Implement CLI entry point and demo tasks
+  - [x] 11.1 Implement CLI entry point in `main.py`
     - Use `argparse` to parse `--task`, `--tests`, `--max-iterations` arguments
     - Run preconfigured demo tasks when no arguments provided
     - Build `OrchestratorConfig` and `TaskInput` from CLI args
     - Invoke `Orchestrator.run()` and print JSON result to stdout
     - _Requirements: 12.2, 13.1, 13.2, 13.3, 13.4_
 
-  - [ ] 11.2 Create demo task files
+  - [x] 11.2 Create demo task files
     - Create `demo_tasks/task1.json` with a simple function task (e.g., fibonacci)
     - Create `demo_tasks/task2.json` with a data structure task (e.g., stack implementation)
     - Ensure both are valid JSON with "task" field
