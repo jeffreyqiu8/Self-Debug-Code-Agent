@@ -176,7 +176,7 @@ Build a CLI-driven autonomous self-debugging code agent in Python. The implement
     - Test error handling for invalid arguments
     - _Requirements: 13.1, 13.2, 13.3, 13.4_
 
-- [ ] 12. Final checkpoint - Ensure all tests pass
+- [x] 12. Final checkpoint - Ensure all tests pass
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes
